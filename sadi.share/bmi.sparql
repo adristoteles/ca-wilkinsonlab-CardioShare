@@ -1,0 +1,8 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX patients: <http://biordf.net/cardioSHARE/patients.owl#>
+PREFIX bmi: <http://sadiframework.org/examples/bmi.owl#>
+SELECT ?patient ?bmi 
+FROM <http://biordf.net/cardioSHARE/patients.rdf> 
+WHERE { 
+?patient bmi:BMI ?bmi.
+}
